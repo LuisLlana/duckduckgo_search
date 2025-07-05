@@ -268,11 +268,11 @@ class DDGS:
     ) -> list[dict[str, str]]:
         assert keywords, "keywords is mandatory"
 
-        headers = {
-            "Referer": "https://lite.duckduckgo.com/",
-            "Sec-Fetch-User": "?1",
-        }
-        self.client.headers_update(headers)
+        # headers = {
+        #     "Referer": "https://lite.duckduckgo.com/",
+        #     "Sec-Fetch-User": "?1",
+        # }
+        # self.client.headers_update(headers)
 
         payload = {
             "q": keywords,
